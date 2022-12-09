@@ -13,3 +13,4 @@ autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype rust setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype fortran setlocal tabstop=2 shiftwidth=2 expandtab
