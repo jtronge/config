@@ -18,3 +18,5 @@ autocmd Filetype c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype vimrc setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype fortran setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype toml setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype rst setlocal tabstop=4 shiftwidth=4 expandtab
