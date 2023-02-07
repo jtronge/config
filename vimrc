@@ -15,9 +15,12 @@ autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype rust setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype c setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype cpp setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype cmake setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype vimrc setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype fortran setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype toml setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype rst setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype sh setlocal tabstop=4 shiftwidth=4 expandtab
