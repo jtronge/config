@@ -4,6 +4,8 @@ set mouse-=a      " The mouse is annoying
 set nocompatible  " Allow tab completion
 set history=50    " 50 lines of history
 set ruler         " Show cursor position
+" Default tabbing
+set tabstop=4 tabstop=4 expandtab
 :color desert
 " Set new file types
 au BufRead,BufNewFile *.jsx set filetype=jsx
