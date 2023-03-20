@@ -5,10 +5,11 @@ colors:
     foreground: '0xFFFFFF'
   normal:
     green: '0x00AA00'
+    cyan: '0x009999'
   bright:
     black: '0x000000'
     green: '0x00FF00'
-    cyan: '0x00FFFF'
+    cyan: '0x00EEEE'
     white: '0xFFFFFF'
 env:
   TERM: xterm-256color
