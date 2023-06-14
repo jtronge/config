@@ -10,6 +10,7 @@ set tabstop=4 tabstop=4 expandtab
 " Set new file types
 autocmd BufRead,BufNewFile *.jsx set filetype=jsx
 autocmd BufRead,BufNewFile Makefile.am set filetype=makefile syntax=make
+autocmd BufRead,BufNewFile *.cwl set filetype=yaml
 " File rules
 autocmd Filetype makefile setlocal tabstop=8 shiftwidth=8 noexpandtab
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 expandtab
