@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+"""Script to open a special application based on file type."""
+import sys
+import os
+import shutil
+
+
+def exec_prog(prog, fname):
+    """Execute a program on the given file."""
+    os.execv(shutil.which(prog), [prog, fname])
+
+fname = sys.argv[1]
+parts = fname.lower().split('.')
+if parts[-1] == 'pdf':
+    exec_prog('evince', fname)
