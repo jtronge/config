@@ -7,9 +7,20 @@ import shutil
 
 def exec_prog(prog, fname):
     """Execute a program on the given file."""
-    os.execv(shutil.which(prog), [prog, fname])
+    if os.fork() == 0:
+        os.execv(shutil.which(prog), [prog, fname])
 
-fname = sys.argv[1]
-parts = fname.lower().split('.')
-if parts[-1] == 'pdf':
-    exec_prog('evince', fname)
+
+EXT_MAP = {
+    'pdf': 'atril',
+}
+
+
+if __name__ == '__main__':
+    fname = sys.argv[1]
+    parts = fname.lower().split('.')
+    try:
+        prog = EXT_MAP[parts[-1]]
+    except KeyError:
+        prog = 'vim'
+    exec_prog(prog, fname)

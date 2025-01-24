@@ -1,3 +1,7 @@
+call plug#begin()
+Plug 'JuliaEditorSupport/julia-vim' " Julia plugin
+call plug#end()
+
 syntax on
 filetype indent off
 set mouse-=a      " The mouse is annoying
@@ -28,5 +32,7 @@ autocmd Filetype toml setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype rst setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype sh setlocal tabstop=4 shiftwidth=4 expandtab
+" Don't insert comment characters when I don't want them
+autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Set the application to be used for viewing files
 let g:netrw_browsex_viewer= "open"
