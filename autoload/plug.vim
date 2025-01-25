@@ -393,7 +393,6 @@ function! plug#end()
   endfor
 
   call s:reorg_rtp()
-  filetype plugin indent on
   if has('vim_starting')
     if has('syntax') && !exists('g:syntax_on')
       syntax enable
@@ -648,7 +647,6 @@ function! s:lod_ft(pat, names)
   call s:lod(a:names, ['plugin', 'after/plugin'], syn, 'after/'.syn)
   execute 'autocmd! PlugLOD FileType' a:pat
   call s:doautocmd('filetypeplugin', 'FileType')
-  call s:doautocmd('filetypeindent', 'FileType')
 endfunction
 
 function! s:lod_cmd(cmd, bang, l1, l2, args, names)
