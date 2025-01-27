@@ -21,7 +21,7 @@ autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype jsx setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype rust setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype rust setlocal tabstop=4 shiftwidth=4 expandtab nosmartindent
 autocmd Filetype c setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype cpp setlocal tabstop=4 shiftwidth=4 expandtab
 autocmd Filetype cmake setlocal tabstop=4 shiftwidth=4 expandtab
